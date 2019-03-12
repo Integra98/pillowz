@@ -1,12 +1,24 @@
 
 <div class='container'>
-  <div class='header'>
-    header
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Pillowz</a>
+      <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Выберите шаг</button>
+          <ul class="dropdown-menu">
+            <li><a  routerLink="/step1">Шаг1: тип жилья</a></li>
+            <li><a  routerLink="/step2">Шаг2: местоположение</a></li>
+            <li><a  routerLink="/step3">Шаг3: характеристики</a></li>
+            <li><a  routerLink="/step4">Шаг4: услуги и удобства</a></li>
+            <li><a  routerLink="/step5">Шаг5: правила</a></li>
+            <li><a  routerLink="/step6">Шаг6: фотографии</a></li>
+            <li><a  routerLink="/step7">Шаг7: бронирование</a></li>
+            <li><a  routerLink="/step8">Шаг8: описание</a></li>
+
+          </ul>
+        </div>
+      
+  </nav>
   <div class='main'>
         <router-outlet></router-outlet>
-  </div>
-  <div class='footer'>
-    footer
   </div>
 </div>

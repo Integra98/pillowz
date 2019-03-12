@@ -1,0 +1,11 @@
+
+<h1 style="text-align: center;">Загрузите не менее 4-х фотографий</h1>
+<div style="margin:20px;">
+    <img [src]="url" height="200"> <br/>
+    <input type='file' (change)="onSelectFile($event)">
+
+</div>
+<div class='toolbar'>
+    <button routerLink="/step5" type="button" class="btn btn-primary">Назад</button>
+  <button routerLink="/step7" type="button" class="btn btn-primary" >Далее</button>
+</div>
